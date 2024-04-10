@@ -1,0 +1,359 @@
+.menu-banner{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+/* 캐러셀 영역 */
+.carousel-inner{
+    height: 550px;
+    background-color: whitesmoke;
+    transition: opacity 0.5s ease;
+}
+
+.inner-img{
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+}
+
+p,h5{
+    color: white;
+}
+/* 중간 메뉴 부분 */
+.mid{
+    height: 200px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+.mid-img{
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid lightgray;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/* 상품 영역 */
+.card-container{
+    position: relative;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.card-img{
+    height: 250px;
+}
+
+.card-text{
+    color: black;
+}
+
+.under-img{
+    object-fit: inherit
+}
+.BESTITEM{
+            text-align:center;
+        }
+        .container{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .col{
+           margin-top: 10px;
+        }
+        img{
+            height: 300px;
+            object-fit: contain;
+        }
+        .card:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+/* 합치는 부분 */
+.BESTITEM{
+    text-align:center;
+}
+
+.col{
+   margin-top: 10px;
+}
+img{
+    height: 300px;
+    object-fit: contain;
+}
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 최상단 메뉴 부분 */
+*{margin: 0; padding: 0;}
+
+/* 첫번째 헤더부분 */ /* 첫번째 헤더부분 */ /* 첫번째 헤더부분 */ /* 첫번째 헤더부분 */
+
+.first_header {
+    font-size: 12px;
+    height: 43px;
+    line-height: 43px;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.first_row{
+    position: relative;
+}
+
+.btn-link {
+/* white-space 속성을 normal로 변경하여 텍스트 줄 바꿈 가능하도록 함 */
+white-space: normal;
+}
+
+.first_header .dropdown-divider {
+    border-top: 1px dashed gray;
+    width: 100%;
+}
+
+.first_header .btn{
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+/* 화살표를 없애는 스타일 */
+.first_header .btn-group .btn.dropdown-toggle::after {
+    display: none; 
+}
+
+hr.hr_first{
+    background-color: rgba(0, 0, 0, 0.1);
+    clear: both;
+}
+
+ .first_header .col_1st > .btn::before{
+    content: " / ";
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.9em;
+}  
+
+.first_header .col_1st > .btn{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    background-color: aqua;
+    width: 123px;
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.first_header .col_2nd > .btn{
+    font-weight: bolder;
+    width: 96px;
+    background-color: darkkhaki;
+    display: inline-block;
+    position: relative;
+    left: 44px;
+}
+
+.first_header .col_3rd {
+    font-weight: bolder;
+    width: 196px;
+    background-color: blanchedalmond;
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    left: 74px;
+}
+
+.first_header .col_4th > .btn-group{
+    font-weight: bolder;
+    width: 96px;
+    background-color: blueviolet;
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    left: 100px;
+    }
+
+.first_header .col_5th > .btn-group{
+    font-weight: bolder;
+    width: 96px;
+    background-color: darkcyan;
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    left: 58px;
+}
+
+.first_header .col_6th > .btn-group{
+    font-weight: bolder;
+    width: 96px;
+    background-color: coral;
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    left: 28px;
+}
+
+.first_header .col_7th > .btn-group{
+    font-weight: bolder;
+    width: 99px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    left: 17px;
+}
+
+
+/* 두번째 헤더부분 */ /* 두번째 헤더부분 */ /* 두번째 헤더부분 */ /* 두번째 헤더부분 */
+
+hr.hr_second{
+    background-color: rgba(0, 0, 0, 0.1);
+    clear: both;
+}
+
+.second_header{
+    position: relative;
+}
+
+.second_header .second_row{
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 120px;
+    display: flex;
+}
+
+.second_header > .col_1st{
+    vertical-align: middle;
+    width: 240px;
+}
+
+.second_header > .col_2nd{
+    vertical-align: bottom;
+    width: 240px;
+}
+
+.second_header > .col_3rd{
+    vertical-align: middle;
+    width: 240px;
+}
+
+.second_header .col_3rd .btn::after {
+    display: none; /* 화살표를 없애는 스타일 */
+}
+
+.second_header .col_3rd{
+    display: flex;
+    align-content: space-evenly;
+
+}
+
+
+/* 스와이퍼쪽 */ /* 스와이퍼쪽 */ /* 스와이퍼쪽 */ /* 스와이퍼쪽 */ /* 스와이퍼쪽 */
+.swiper-container {
+    position: relative;
+    height: 120px;
+    width: 240px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 100;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.first_swiper_container, .first_swiper_wrapper{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 스와이퍼 끝 */ /* 스와이퍼 끝 */ /* 스와이퍼 끝 */ /* 스와이퍼 끝 */ /* 스와이퍼 끝 */
+
+
+
+.second_header .col_1st{
+    text-align: left;
+}
+
+.second_header .col_2nd{
+    text-align: center;
+}
+
+.second_header .col_3rd{
+    text-align: right;
+}
+
+
+
+
+.second_header .col_3rd .dropdown-center ul.dropdown-menu li{
+    display: block;
+    margin: 0;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: brown;
+}
+
+
+.second_header .col_2nd{
+    position: relative;
+    top: 21px;
+}
+
+
+.second_header .col_3rd .btn{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* 세번째 헤더부분 */ /* 세번째 헤더부분 */ /* 세번째 헤더부분 */ /* 세번째 헤더부분 */ /* 세번째 헤더부분 */
+
+.third_header .btn::after {
+    display: none; /* 화살표를 없애는 스타일 */
+}
+
+hr.hr_third{
+    background-color: rgba(0, 0, 0, 0.1);
+    clear: both;
+}
+
+.third_header{
+    position: sticky;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.third_header .col_2nd{
+    text-align: center;
+}
+
+.third_header .col_2nd .btn{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.third_header .col_2nd .btn-group .dropdown-menu li{
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}

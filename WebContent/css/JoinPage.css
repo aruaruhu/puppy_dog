@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* *{margin: 0 auto; padding: 0;} */
+	.join-container{
+		margin: 0 auto;
+		padding: 0;
+	}
+    /* 상단 타이틀(JOIN) */
+    .join-container .join-title{
+    	margin: 5px 0px;
+        text-align: center;
+        padding: 30px;
+    }
+    .join-container .join-title > p {	/* 얘는 왜 색깔 안됨??? */
+    	font-size: 22px;
+    	padding: 5px;
+    	font-weight: bolder;
+    	letter-spacing: 5px;
+    	/* color: ???; */
+    }
+    
+    .join-container p {
+    	text-align: center;
+    	font-size: 19px;
+    	font-weight: 800;
+    	color: rgba(0, 0, 0, 0.6);
+    	padding: 20px;
+    }
+    
+    /* 회원가입 박스 부분 */
+    .join-container .join-inner{
+    	margin: 0 auto;
+    	max-width: 50%;
+    	display: flex;
+    	align-items: flex-start;
+    	justify-content: center;
+    }
+    .join-container .join-table{
+    	margin-top: 30px;
+    	width: 60%;
+    	
+    }
+    .join-container .join-table tr{
+    	margin: 10px;
+		border-left: none;
+    	border-right: none;
+    	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .join-container .join-table tr:first-child {
+    	border-top: none;
+    }
+    
+    .join-container .join-table tr span{
+    	color: #3ed4be;
+    	font-size: 20px;
+    	font-weight: bolder;
+    }
+    .join-container .join-table tr td{
+    	padding: 15px 15px;
+    	font-size: 12px;
+    	color: rgba(0, 0, 0, 0.4);
+    	font-weight: bold;
+    }
+    
+    .join-container .join-table tr:first-of-type td{
+    	font-size: 20px;
+    	color: black;
+    	font-weight: blod;
+    }
+    
+    .join-container .join-table tr td:first-of-type {
+    	width: 150px;
+    }
+    
+    .join-container .join-table tr input {
+    	border-radius: 3px;
+    	background: rgba(0, 0, 0, 0.02);
+    	height: 30px;
+    	line-height: 15px;
+    	padding: 0px 8px;
+    }
+    
+    .join-container .join-table tr:nth-child(2) input {
+    	border-radius: 3px;
+    	background: #3ed4be;
+    	height: 30px;
+    	line-height: 15px;
+    	color: white;
+    }
+    
+    .join-container .join-table tr:nth-child(7) input {
+    	width: 400px;
+    }
+    
+    .join-container .join-table input::-webkit-input-placeholder{
+    	color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .join-container .join-table tr:nth-child(2) td:last-child::after{
+    	content: "아이디를 입력해 주세요. (영문소문자/숫자, 4~16자)";
+    	padding-left: 10px;
+    	font-size: 10px;
+    }
+    
+    .join-container .join-table tr:nth-child(4) td:last-child::after{
+    	content: "(영문 대소문자/숫자/특수문자 중 3가지 이상 조합, 8자~16자)";
+    	padding-left: 10px;
+    	font-size: 10px;
+    }
+    
+    .join-container .join-table .dismatch_pw::after{
+    	content: "비밀번호가 일치하지 않습니다.";
+    	padding-left: 10px;
+    	font-size: 10px;
+    	color: #3ed4be;
+    }
+    
+    .join-container .join-table #user_phone1 {
+    	width: 70px;
+    	padding-left: 10px;
+    	padding-top: 5px;
+    	padding-bottom: 5px;
+    	font-size: 12px;
+    	font-weight: bold;
+    	color: rgba(0, 0, 0, 0.6);
+    	background: rgba(0, 0, 0, 0.02);
+    	border-radius: 3px;
+     	border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .join-table input[name='user_phone2'],input[name='user_phone3']{
+    	width: 60px;
+    	padding-left: 10px;
+    }
+    
+    
+    .join-container .join-table tr:nth-child(8) .email_chk::after{
+    	content: "이메일을 입력해 주세요.";
+    	padding-left: 10px;
+    	font-size: 10px;
+    }
+    
+    .join-container .join-table tr:nth-child(8) .wrong_email::after{
+    	content: "유효한 이메일을 입력해 주세요.";
+    	padding-left: 10px;
+    	font-size: 10px;
+    	color: #3ed4be;
+    }
+        
+    .join-container .btn-cancel{
+    	background: white;
+    	border: 1px solid lightgray;
+    	width: 125px;
+		height: 50px;
+    }
+    .join-container input{
+    	border: 1px solid rgba(0, 0, 0, 0.08);
+    	max-height: 100%;
+    }
+    
+    .join-container .btn-join {
+		background: #3ed4be;
+		color: white;
+		border: 1px solid lightgray;
+		width: 125px;
+		height: 50px;
+	}
+	
+	.join-container .join-table .btn-join:hover {
+		border: 1px solid rgba(0, 0, 0, 0.35);
+	}
+	
+	.join-container .join-table .btn-cancel:hover {
+		border: 1px solid rgba(0, 0, 0, 0.35);
+	}
+	

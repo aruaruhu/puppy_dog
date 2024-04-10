@@ -1,0 +1,38 @@
+/* 보낼 쿼리문 */
+create database mydb;
+
+use mydb;
+
+create table user (
+   user_id varchar(45) primary key,
+    user_pw varchar(45) not null,
+    user_name varchar(45) not null,
+    user_phone varchar(45) not null,
+    user_address varchar(45) not null,
+    user_email varchar(45) not null
+);
+
+insert into user (user_id, user_pw, user_name, user_phone, user_address, user_email) 
+values ('admin', '1234', 'admin', '010-1111-1111', '서울시', 'admin@naver.com');
+
+create table product(
+pro_num VARCHAR(45) primary key,
+pro_name VARCHAR(45) not null,
+pro_kind VARCHAR(45) not null,
+pro_content VARCHAR(45) not null,
+pro_img VARCHAR(45) not null,
+pro_price VARCHAR(45) default 0,
+pro_sale VARCHAR(45) default 0,
+pro_regdate date not null
+);
+
+create table cartList (
+   order_num int primary key auto_increment comment '주문번호',
+    user_id varchar(45) not null comment 'user테이블의 주문자id',
+    pro_num varchar(45) not null comment 'product테이블의 제품id',
+    order_regdate date not null,
+    constraint user_id foreign key (user_id) references user (user_id),
+    constraint pro_num foreign key (pro_num) references product (pro_num)
+);
+
+/* 까지 */
